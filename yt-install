@@ -7,7 +7,6 @@ pip3 install --upgrage youtube-dl
 mv `which youtube-dl` /usr/bin/youtube-dl
 
 # install aria2c
-apt install git
 git clone https://github.com/aria2/aria2.git
 
 apt install g++
