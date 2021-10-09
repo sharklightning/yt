@@ -8,7 +8,6 @@ pip3 install --upgrade youtube-dl
 mv $(which youtube-dl) /usr/bin
 
 # install aria2c
-cd ${HOME}
 git clone https://github.com/aria2/aria2.git
 
 apt install g++
@@ -42,8 +41,8 @@ autoreconf -i
 
 make
 
-cd ${HOME}/yt
+cd ../yt
 
 chmod +x yt
 
-mv yt /usr/bin/yt
+mv yt /usr/bin
