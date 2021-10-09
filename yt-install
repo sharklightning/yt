@@ -1,6 +1,6 @@
 #!/bin/sh
+set -x
 
-# install youtube-dl
 apt install pip
 pip3 install --upgrage youtube-dl
 
@@ -9,6 +9,8 @@ mv `which youtube-dl` /usr/bin/youtube-dl
 # install aria2c
 apt install git
 git clone https://github.com/aria2/aria2.git
+
+apt install g++
 apt install libgnutls28-dev
 apt install nettle-dev
 apt install libgmp-dev
@@ -39,4 +41,8 @@ autoreconf -i
 
 make
 
-# install yt
+cd ..
+
+chmod +x yt
+
+mv yt /usr/bin/yt
