@@ -41,7 +41,9 @@ autoreconf -i
 
 make
 
-cd ../yt
+mv src/aria2c /usr/bin
+
+cd -
 
 chmod +x yt
 
