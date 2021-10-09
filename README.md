@@ -1,6 +1,6 @@
 # yt
 
-Just a dumb little wrapper around youtube-dl and aria2 for downloading youtube videos fast
+Just a dumb little wrapper around youtube-dl and aria2 for downloading youtube videos fast on Debian based distros
 
 ## Installation
 clone this repository to your local computer\
