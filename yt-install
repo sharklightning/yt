@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# install youtube-dl
+apt install pip
+pip3 install --upgrage youtube-dl
+
+mv `which youtube-dl` /usr/bin/youtube-dl
+
+# install aria2c
+apt install git
+git clone https://github.com/aria2/aria2.git
+apt install libgnutls28-dev
+apt install nettle-dev
+apt install libgmp-dev
+apt install libssh2-1-dev
+apt install libc-ares-dev
+apt install libxml2-dev
+apt install zlib1g-dev
+apt install libsqlite3-dev
+apt install pkg-config
+apt install libgpg-error-dev
+apt install libgcrypt-dev
+apt install libssl-dev
+apt install libexpat1-dev
+apt install libxml2-dev
+apt install libcppunit-dev
+apt install autoconf
+apt install automake
+apt install autotools-dev
+apt install autopoint
+apt install libtool
+apt install make
+
+cd ${PWD}/aria2
+
+autoreconf -i
+
+./configure
+
+make
+
+# install yt
