@@ -6,7 +6,7 @@ Just a simple little wrapper around youtube-dl and aria2 for downloading youtube
 clone this repository to your local computer\
 `git clone https://github.com/sharklightning/yt.git`
 
-change directory into the repository directory\
+change directory into the repository folder\
 `cd yt`
 
 turn yt-install into an executable\
