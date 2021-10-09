@@ -2,13 +2,17 @@
 set -x
 set -e
 
+chmod +x yt
+mv yt /usr/bin
+
+# install youtube-dl
 apt install pip
 pip3 install --upgrade youtube-dl
-
-mv $(which youtube-dl) /usr/bin
-# mv ${PWD}/.local/bin/youtube-dl /usr/bin
+mv /home/${USER}/.local/bin/youtube-dl /usr/bin
 
 # install aria2c
+cd /home/${USER}
+
 git clone https://github.com/aria2/aria2.git
 
 apt install g++
@@ -34,7 +38,7 @@ apt install autopoint
 apt install libtool
 apt install make
 
-cd ${PWD}/aria2
+cd /home/${USER}/aria2
 
 autoreconf -i
 
@@ -43,9 +47,3 @@ autoreconf -i
 make
 
 mv src/aria2c /usr/bin
-
-cd -
-
-chmod +x yt
-
-mv yt /usr/bin
