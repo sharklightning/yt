@@ -8,11 +8,8 @@ mv yt /usr/bin
 # install youtube-dl
 apt install pip
 pip3 install --upgrade youtube-dl
-mv /home/${USER}/.local/bin/youtube-dl /usr/bin
 
 # install aria2c
-cd /home/${USER}
-
 git clone https://github.com/aria2/aria2.git
 
 apt install g++
@@ -38,7 +35,7 @@ apt install autopoint
 apt install libtool
 apt install make
 
-cd /home/${USER}/aria2
+cd aria2
 
 autoreconf -i
 
