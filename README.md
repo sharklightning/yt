@@ -9,6 +9,9 @@ clone this repository to your local computer
 change into the `yt` directory 
 `cd yt`
 
+make `yt-install` executable
+`sudo chmod +x yt-install` 
+
 run the install script
 `sudo ./yt-install`
 
